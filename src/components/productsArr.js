@@ -1,6 +1,7 @@
 const productsArr = [
 
     {
+        id: 'p1',
     
     title: 'Colors',
     
@@ -11,6 +12,7 @@ const productsArr = [
     },
     
     {
+        id: 'p2',
     
     title: 'Black and white Colors',
     
@@ -21,6 +23,7 @@ const productsArr = [
     },
     
     {
+        id: 'p3',
     
     title: 'Yellow and Black Colors',
     
@@ -31,6 +34,7 @@ const productsArr = [
     },
     
     {
+        id: 'p4',
     
     title: 'Blue Color',
     

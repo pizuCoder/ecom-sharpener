@@ -1,6 +1,7 @@
 import Nav from "react-bootstrap/Nav";
-import Badge from "react-bootstrap/Badge";
-import Button from "react-bootstrap/Button";
+// import Badge from "react-bootstrap/Badge";
+// import Button from "react-bootstrap/Button";
+import Cart from "./Cart/CartModal";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 const NavBar = () => {
@@ -19,13 +20,11 @@ const NavBar = () => {
           <Nav.Link href="/about">About</Nav.Link>
         </Nav.Item>
       </Nav>
-      <Button variant="primary">
-          Cart <Badge bg="secondary">0</Badge>
-          <span className="visually-hidden">cart-items</span>
-        </Button>
+      <Cart />
       </Container>
       </Navbar>
     </>
   );
 };
+// render(<Cart />)
 export default NavBar;

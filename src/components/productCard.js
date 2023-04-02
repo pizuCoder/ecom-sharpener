@@ -11,7 +11,7 @@ function ProductCard(props) {
         <Card.Text>
           {`Rs: ${props.price}`}
         </Card.Text>
-        <Button variant="primary">Add to Cart</Button>
+        <Button variant="primary" onClick={props.addToCart}>Add to Cart</Button>
       </Card.Body>
     </Card>
   );
