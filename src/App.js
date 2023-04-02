@@ -6,6 +6,7 @@ import StorePage from './components/Store';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
 import AboutUs from './components/aboutPage';
+import HomePage from './components/Homapage';
 
 function App() {
   return(
@@ -15,7 +16,7 @@ function App() {
       {/* <StorePage /> */}
       <BrowserRouter>
       <Routes>
-          {/* <Route path="home" element={<Blogs />} /> */}
+          <Route path="home" element={<HomePage />} />
           <Route path="store" element={<StorePage />} />
           <Route path="about" element={<AboutUs />} />
       </Routes>
