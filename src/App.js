@@ -1,16 +1,25 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import StorePage from './components/Store';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
+import AboutUs from './components/aboutPage';
 
 function App() {
   return(
     <div>
       <NavBar />
       <Header />
-      <StorePage />
+      {/* <StorePage /> */}
+      <BrowserRouter>
+      <Routes>
+          {/* <Route path="home" element={<Blogs />} /> */}
+          <Route path="store" element={<StorePage />} />
+          <Route path="about" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
     </div>
   )
 }
