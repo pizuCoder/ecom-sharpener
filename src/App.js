@@ -7,6 +7,11 @@ import NavBar from './components/Navbar';
 import Header from './components/Header';
 import AboutUs from './components/aboutPage';
 import HomePage from './components/Homapage';
+import ContactUs from './components/contactUS/ContactUs';
+
+
+
+
 
 function App() {
   return(
@@ -19,6 +24,7 @@ function App() {
           <Route path="home" element={<HomePage />} />
           <Route path="store" element={<StorePage />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
     </div>
