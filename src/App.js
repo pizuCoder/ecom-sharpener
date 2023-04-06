@@ -8,6 +8,7 @@ import Header from './components/Header';
 import AboutUs from './components/aboutPage';
 import HomePage from './components/Homapage';
 import ContactUs from './components/contactUS/ContactUs';
+import ProductPage from './components/ProductPage';
 
 
 
@@ -21,10 +22,11 @@ function App() {
       {/* <StorePage /> */}
       <BrowserRouter>
       <Routes>
-          <Route path="home" element={<HomePage />} />
-          <Route path="store" element={<StorePage />} />
-          <Route path="about" element={<AboutUs />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/store" element={<StorePage />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/store/:productId" element={<ProductPage />} />
       </Routes>
     </BrowserRouter>
     </div>

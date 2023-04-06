@@ -11,6 +11,7 @@ const StorePage = () => {
     return (
         <Col style={{marginBottom: "1rem"}}>
             <div key={product.id}>
+              <a href={`/store/${product.id}`}>
       <ProductCard
       
         title={product.title}
@@ -18,6 +19,7 @@ const StorePage = () => {
         price={product.price}
         addToCart = {() => addToCart(product)}
       />
+      </a>
       </div>
       </Col>
     );
